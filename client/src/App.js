@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import Editor from "@monaco-editor/react";
 
-const socket = io();
+const socket = io('https://collab-code-editor-pock.onrender.com');
+
 
 function App() {
   const [code, setCode] = useState('');
